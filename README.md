@@ -4,4 +4,4 @@
 
 ## For the sake of simplicity - and my personal preferences - the audio files will only contain vocals and no sound of any musical instruments (as this will over complicate the process drastically.)
 
-`
+![milestone 1 kanban](milestone1.png)
