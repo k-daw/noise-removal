@@ -1,4 +1,4 @@
-# Disclaimer: This project is a weekend project.
+# Disclaimer: This is a weekend project.  
 
 ## The utlimate goal of this project is that, it takes an audio file, and returns a fully-fetched publishing quality audio - or atleast something that is an improvement of the audio quality. 
 
