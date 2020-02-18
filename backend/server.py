@@ -1,5 +1,5 @@
 from flask import Flask
-from flask import request
+from flask import request, jsonify
 
 
 
@@ -15,11 +15,18 @@ def get_noise():
         print('RECEIVED POST REQUEST')
         data = request.files
         print(type(data['file']))
-        data['file'].save('file.mp3')
+        data['file'].save('noise.mp3')
+    return jsonify({'success': 'true'})
+
+@app.route('/sound_input', methods = ["POST"])
+def sound_input():
+    if request.method == 'POST':
+        print('RECEIVED POST REQUEST')
+        data = request.files
+        data['file'].save('sound.mp3')
+    return jsonify({'success': 'true'})
 
 
-
-    return 'GOOD BOY'
 
 if __name__ == "__main__":
     app.run(debug=True)
